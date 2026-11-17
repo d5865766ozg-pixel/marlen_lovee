@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff6f7">
+<title>Для Марлена ♡</title>
+<style>
+:root{--rose:#f7dce4;--pink:#e995ad;--berry:#a94364;--ink:#513944;--paper:#fffaf7}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(circle at 8% 12%,#ffe8ee 0,transparent 29%),radial-gradient(circle at 92% 76%,#f9e2e9 0,transparent 27%),var(--paper);overflow-x:hidden}
+.wrap{width:min(720px,100%);margin:auto;padding:20px 17px 42px}
+header{text-align:center;padding:35px 8px 20px}
+.kicker{font:11px/1.5 Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#b67589}
+h1{font-size:clamp(42px,10vw,66px);font-weight:normal;line-height:1.02;color:var(--berry);margin:16px 0 12px}
+.sub{font:14px/1.7 Arial,sans-serif;color:#947985}
+.heart{display:inline-block;color:#dc7f9c;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{transform:scale(1.2)}}
+.card{background:#ffffffd9;border:1px solid #f0cbd6;border-radius:23px;padding:23px;margin:17px 0;box-shadow:0 10px 32px #9c4b6710}
+.center{text-align:center}.title{font-size:27px;font-weight:normal;color:var(--berry);margin:0 0 10px}
+p{line-height:1.75}.btn{border:0;border-radius:99px;padding:13px 21px;background:var(--berry);color:white;font:bold 14px Arial,sans-serif;cursor:pointer;box-shadow:0 6px 15px #a83d6025;transition:transform .18s,background .18s;touch-action:manipulation}
+.btn:active{transform:scale(.97)}.btn.alt{background:#f8e2e9;color:#8d3c59;box-shadow:none}
+.btn:focus-visible{outline:3px solid #d989a3;outline-offset:3px}
+.letter{font-size:16px;text-align:left;margin-top:20px;border-top:1px solid #f1d4dc;padding-top:8px}
+.hidden{display:none!important}
+.reasons{display:grid;grid-template-columns:1fr 1fr;gap:11px}.reason{background:#fff3f6;border:1px solid #f5dce4;border-radius:16px;padding:14px;font:13px/1.6 Arial,sans-serif;min-height:95px}.reason b{display:block;color:var(--berry);margin-bottom:5px;font-size:14px}
+.meter{height:13px;background:#f6e0e7;border-radius:99px;overflow:hidden;margin:18px 0 9px}.fill{height:100%;width:0;background:linear-gradient(90deg,#f0a9bd,#a94364);border-radius:99px;transition:width 1.15s ease}
+.big{font-size:30px;color:var(--berry);margin:7px}.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:17px}.answer{min-height:28px;margin-top:15px;color:var(--berry);font-style:italic;line-height:1.6}
+.gift{font-size:42px;margin:4px 0 10px}.tiny{font:12px/1.6 Arial,sans-serif;color:#a17f8a}.sparkles{letter-spacing:8px;color:#d58aa1;margin-top:18px}
+footer{text-align:center;padding:22px 5px;color:#a17f8a;font:12px Arial,sans-serif}
+.float{position:fixed;bottom:-35px;pointer-events:none;opacity:0;color:#e8a0b5;animation:rise 5s linear forwards;z-index:2}
+@keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.65}100%{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:430px){.card{padding:19px}.reason{padding:11px;font-size:12px}.reason b{font-size:13px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header>
+  <div class="kicker">маленький сюрприз для одного человека</div>
+  <h1>Для тебя,<br>Марлен <span class="heart">♡</span></h1>
+  <div class="sub">Потому что иногда хочется напомнить,<br>как много значит один человек.</div>
+  <div class="sparkles">✧ ♡ ✧</div>
+</header>
+
+<section class="card center">
+  <div class="gift">💌</div>
+  <h2 class="title">У меня есть кое-что для тебя</h2>
+  <p>Я спрятала здесь маленькое письмо. Нажми, чтобы открыть.</p>
+  <button class="btn" id="letterButton" type="button" aria-expanded="false" aria-controls="letter">Открыть письмо ♡</button>
+  <div id="letter" class="letter hidden">
+    <p>Марлен, я просто хочу, чтобы ты знал: я очень рада, что ты есть в моей жизни.</p>
+    <p>Мне дороги наши разговоры, твоя улыбка, твои милые слова и даже самые обычные моменты, которые для меня совсем не обычные.</p>
+    <p>Спасибо, что ты — это ты. Надеюсь, этот маленький сюрприз подарит тебе улыбку. ♡</p>
+    <p style="text-align:right;color:#a94364">С теплом, от меня ♡</p>
+  </div>
+</section>
+
+<section class="card">
+  <h2 class="title">Несколько причин, почему ты особенный</h2>
+  <div class="reasons">
+    <div class="reason"><b>♡ Твоя улыбка</b>Она умеет сделать мой день лучше.</div>
+    <div class="reason"><b>♡ Твой голос</b>Его приятно слушать даже без повода.</div>
+    <div class="reason"><b>♡ Наши моменты</b>Я люблю воспоминания, которые мы создаём.</div>
+    <div class="reason"><b>♡ Просто ты</b>Мне не нужна особенная причина, чтобы ценить тебя.</div>
+  </div>
+</section>
+
+<section class="card center">
+  <h2 class="title">Измеритель любви</h2>
+  <p>Как думаешь, сколько здесь любви?</p>
+  <div class="meter" role="progressbar" aria-label="Измеритель любви" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="fill" id="fill"></div></div>
+  <div class="big" id="percent">∞</div>
+  <button class="btn" id="measureButton" type="button">Проверить ♡</button>
+  <p class="tiny" id="meterText">Подсказка: шкала может не выдержать.</p>
+</section>
+
+<section class="card center">
+  <h2 class="title">И последний вопрос…</h2>
+  <div style="font-size:21px;line-height:1.5">Ты улыбнулся, пока смотрел этот сайт? 🥺</div>
+  <div class="actions">
+    <button class="btn" id="yesButton" type="button">Да ♡</button>
+    <button class="btn alt" id="sureButton" type="button">Конечно!</button>
+  </div>
+  <div class="answer" id="answer" aria-live="polite"></div>
+</section>
+<footer>Сделано с теплом и большой порцией сердечек ♡</footer>
+</main>
+<script>
+(() => {
+  const letterButton = document.getElementById('letterButton');
+  const letter = document.getElementById('letter');
+  letterButton.addEventListener('click', () => {
+    const opening = letter.classList.contains('hidden');
+    letter.classList.toggle('hidden', !opening);
+    letterButton.textContent = opening ? 'Спрятать письмо' : 'Открыть письмо ♡';
+    letterButton.setAttribute('aria-expanded', String(opening));
+  });
+  document.getElementById('measureButton').addEventListener('click', () => {
+    document.getElementById('fill').style.width = '100%';
+    document.getElementById('percent').textContent = '∞%';
+    document.querySelector('.meter').setAttribute('aria-valuenow', '100');
+    document.getElementById('meterText').textContent = 'Ой… кажется, обычных процентов недостаточно! ♡';
+  });
+  const reply = () => {
+    document.getElementById('answer').textContent = 'Тогда сюрприз удался! Береги свою улыбку ♡';
+    for (let i = 0; i < 7; i++) {
+      const heart = document.createElement('span');
+      heart.className = 'float'; heart.textContent = ['♡','♥','✧'][i % 3];
+      heart.style.left = (8 + Math.random() * 84) + 'vw';
+      heart.style.animationDelay = (Math.random() * .7) + 's';
+      heart.style.fontSize = (17 + Math.random() * 16) + 'px';
+      document.body.appendChild(heart);
+      heart.addEventListener('animationend', () => heart.remove(), {once:true});
+    }
+  };
+  document.getElementById('yesButton').addEventListener('click', reply);
+  document.getElementById('sureButton').addEventListener('click', reply);
+})();
+</script>
+</body>
+</html>
