@@ -27,6 +27,10 @@ p{line-height:1.75}.btn{border:0;border-radius:99px;padding:13px 21px;background
 .meter{height:13px;background:#f6e0e7;border-radius:99px;overflow:hidden;margin:18px 0 9px}.fill{height:100%;width:0;background:linear-gradient(90deg,#f0a9bd,#a94364);border-radius:99px;transition:width 1.15s ease}
 .big{font-size:30px;color:var(--berry);margin:7px}.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:17px}.answer{min-height:28px;margin-top:15px;color:var(--berry);font-style:italic;line-height:1.6}
 .gift{font-size:42px;margin:4px 0 10px}.tiny{font:12px/1.6 Arial,sans-serif;color:#a17f8a}.sparkles{letter-spacing:8px;color:#d58aa1;margin-top:18px}
+.love-photo{margin:18px auto 8px;width:min(440px,100%);aspect-ratio:4/3;border-radius:22px;background:linear-gradient(135deg,#f6c8d6,#d98da8);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:inset 0 0 0 1px #ffffff80}
+.love-photo:before,.love-photo:after{content:'♡';position:absolute;color:#ffffff55;font-size:150px}.love-photo:after{font-size:90px;transform:translate(100px,55px)}
+.love-photo span{font:800 clamp(48px,13vw,78px) Arial,sans-serif;letter-spacing:9px;color:white;text-shadow:0 4px 18px #8f3d5d55;z-index:1}
+.love-caption{font:15px/1.7 Arial,sans-serif;color:#9b4967;text-align:center;margin:12px auto 26px}
 footer{text-align:center;padding:22px 5px;color:#a17f8a;font:12px Arial,sans-serif}
 .float{position:fixed;bottom:-35px;pointer-events:none;opacity:0;color:#e8a0b5;animation:rise 5s linear forwards;z-index:2}
 @keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.65}100%{transform:translateY(-110vh) rotate(25deg);opacity:0}}
@@ -42,6 +46,8 @@ footer{text-align:center;padding:22px 5px;color:#a17f8a;font:12px Arial,sans-ser
   <div class="sub">Потому что иногда хочется напомнить,<br>как много значит один человек.</div>
   <div class="sparkles">✧ ♡ ✧</div>
 </header>
+<div class="love-photo" role="img" aria-label="LOVE"><span>LOVE</span></div>
+<p class="love-caption">даже расстояние не может мешать настоящей любви ♡</p>
 
 <section class="card center">
   <div class="gift">💌</div>
